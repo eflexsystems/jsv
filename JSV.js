@@ -8,7 +8,7 @@
 
 var JSV = {};
 /**
- * parses JSV text into a JavaScript type 
+ * parses JSV text into a JavaScript type
  * @param str
  */
 JSV.parse = function(str)
@@ -389,6 +389,9 @@ JSV.containsAny_ = function(str, tests)
 	}
 	return false;
 };
+
+
+window.JSV = JSV;
 
 /* Closure Library StringBuffer for efficient string concatenation */
 var hasScriptEngine = 'ScriptEngine' in window;
